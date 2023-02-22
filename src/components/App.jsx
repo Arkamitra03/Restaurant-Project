@@ -3,6 +3,7 @@ import Heading from "./Header";
 import Menu from "./Menu";
 import Card from "./Card";
 import Navigation from "./Navbar";
+import Footer from "./Footer";
 function createStyle(props) {
   return (
     <Card
@@ -46,6 +47,7 @@ function App() {
       </ul>
 
      <div className="main-card--cointainer">{original.map(createStyle)}</div>
+     <Footer/>
     </div>
   );
 }
